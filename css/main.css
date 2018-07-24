@@ -1,0 +1,274 @@
+/*****BASE STYLES *****/
+/** This css tag customizes the font and color from the html's body tag **/
+body{
+
+	color:#2b2b2b;
+	font-family:'Source Sans Pro', sans-serif;
+	
+}
+/** A value is assigned to the section's height for #about, #work, and #contact **/
+/** You can write it like this**/
+/** which is great if all the sections have the same measurement **/
+
+#about, #work, #contact{
+
+	height:600px;
+
+}
+
+/** Or you could have written it like this**/
+/** #about {
+	height:600px;
+}
+	#work{
+	height:600px;
+	}
+	#contact{
+	height:600px;
+	}
+This I would recommend when there are major differences in sections
+**/
+
+/***** GRID *****/
+/*important to note that margins has two values
+so as to limit the block element from stretching further **/
+
+.full-width {
+
+	margin:0 auto;
+	width:1200px;
+	
+}
+
+/** these sections are assigned different widths 
+that's why its separated for easier to read
+**/
+
+
+.half-width {
+
+	float: left;
+	width: 600px;
+	
+}
+
+.third-width{
+
+	float:left;
+	width:400px;
+	
+}
+
+/***** HEADER *****/
+/**This is a relative url the two periods in front of the forward slash
+is to indicate that the path is one directory behind the directory in 
+and to look for the image in the image directory folder
+***/
+header{
+
+	background:url("../img/background-clipping-mask.png") no-repeat;
+	background-size:cover;
+	height: 800px;
+	
+}
+
+/** h1 is being assigned a color as well as padding, font-size, family and weight**/
+
+header h1{
+	
+	color:#bbc085;
+	font-weight:normal;
+	font-family:'Lora', 'serif';
+	font-size: 30px;
+	padding: 65px 0 65px 25px;
+	
+}
+
+/**the nav buttons are being floated right and padding is given 
+and they are reassinged to display as an inline block.
+Color is being assigned and text is customized
+ 
+**/
+nav { 
+
+
+	float:right;
+	padding: 75px 25px;
+}
+
+nav ul li {
+	display:inline-block;
+}
+
+nav ul li a {
+
+	color:#828282;
+	font-size: 18px;
+	padding-left: 80px;
+	text-transform: uppercase;
+	text-decoration:none;
+	
+}
+
+/**
+h2 is being assinged a color.  font is being changed to Lora 
+size is given 72, line-height adjust and padding and width is customized
+**/
+header h2 {
+
+	clear:left;
+	color:#9b9b9b;
+	font-family:'Lora';
+	font-size: 72px;
+	line-height: 80px;
+	padding: 20px 0 20px 25px;
+	width: 1000px;
+	
+}
+
+header h2 span{
+
+	color:#2b2b2b;
+}
+
+
+
+/****** ABOUT *****/
+/**This  CSS code will give a specific style to just the about section
+This is both an ID selector and a class selector on one line.  It's called
+a COMBINATION.  It says give 80px of padding on the top and bottom and none 
+on either side.**/
+#about .full-width{
+
+	padding: 80px 0;
+}
+
+/** the following code will style the h2 and P tags in the about section **/
+
+#about h2{
+
+	font-family: 'Lora', serif;
+	font-size:36px;
+	padding-left: 80px;
+}
+
+#about p{
+
+	color:#7F7F7F;
+	font-size:21px;
+	line-height:40px;
+	padding-left:80px;
+	padding-right:0px;
+
+
+}
+
+/** the following code will customize the work section. 
+This will assign a color to the background as well as
+center the text padding the image and full width as well as assign
+font-size to h3 tag and assign font, size, line height and padding to p tag**/
+/***** WORK *****/
+#work {
+
+	background:#f9ceb7;
+	text-align:center;
+}
+#work .full-width{
+
+	padding:115px 0;
+}
+
+#work img{
+
+	padding-bottom:30px;
+}
+#work h3{
+
+	font-size:24px;
+	line-height:32px;
+}
+#work p{
+
+	font-family:'Lora', serif;
+	font-size:18px;
+	line-height:30px;
+	padding: 0 50px;
+}
+/**These two css tags are customizing the background as well as adding some padding
+to the contact section **/
+
+/***** CONTACT *****/
+#contact{
+
+	background:#ebebeb;
+	
+}
+
+#contact .full-width{
+
+	padding:110px 0;
+}
+
+#contact img#contact-img {
+
+    margin-left: 25px;
+    border: 12px solid #ffffff;
+}
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul{
+
+	padding-left: 115px;
+}
+
+#contact p{
+	padding-left: 250px;
+}
+#contact #envelope{
+
+	padding: 0 10px 0 115px;
+}
+
+#contact h2{
+
+	font-family: Lora;
+	font-size: 36px;
+	line-height: 44px;
+}
+#contact #email-header{
+
+	font-size: 32px;
+	font-weight: lighter;
+	line-height: 44px;
+	margin: -30px 0 5px 0;
+}
+#contact #socialmedia-header{
+
+	font-weight: bold;
+	font-size: 29px;
+	line-height: 44px;
+	margin: 40px 0 0 0;
+}
+
+#contact a{
+
+	color: #c49075;
+	font-weight: bold;
+	font-size: 28px;
+	text-decoration: none;
+	
+}
+
+#contact ul{
+
+	list-style:none;
+}
+
+#contact ul li{
+
+	display: inline-block;
+}
+#contact ul img{
+
+	font-size: 32px;
+	padding-right: 48px;
+}
